@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --font-satoshiBlack: "Satoshi", sans-serif;
+  --font-satoshiRegular: "Satoshi", sans-serif;
+  --font-excon: "Excon", sans-serif;
+  --font-exconSec: "Excon", sans-serif;
+
+  --color-sec: #585858;
+}
+
+@font-face {
+  font-family: SatoshiBlack;
+  src: url(../../public/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: SatoshiBoldRegular;
+  src: url(../../public/fonts/Satoshi_Complete/Satoshi_Complete/Fonts/OTF/Satoshi-Regular.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: Excon;
+  src: url(../../public/fonts/Excon_Complete/Excon_Complete/Fonts/OTF/Excon-Black.otf)
+    format("opentype");
+}
+
+@font-face {
+  font-family: ExconSec;
+  src: url(../../public/fonts/Excon_Complete/Excon_Complete/Fonts/OTF/Excon-Medium.otf)
+    format("opentype");
+}
+
+
+
+
+body {
+  background: #ffffff;
+}
+
+#fadeOut {
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 55%,
+    transparent 100%
+  );
+}
+
+#navBarButton {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  scale: 1;
+  transition: 300ms ease-out;
+}
+
+#navBarButton:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.726);
+  scale: 1.05;
+  transition: 300ms ease-out;
+}
+
+.dropDown {
+  background: #1546e6;
+  background: radial-gradient(
+    circle,
+    rgba(21, 70, 230, 1) 0%,
+    rgba(80, 162, 255, 1) 100%
+  );
+}
+
+#dropdownOverlay {
+  mask-image: radial-gradient(circle at center, black 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(
+    circle at center,
+    black 55%,
+    transparent 100%
+  );
+}
+
+.image-text {
+  background-image: url(../../public/images/cliptext.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}
+
+#letsTalkBtn {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+  scale: 1;
+  transition: 300ms ease-out;
+}
+
+#letsTalkBtn:hover {
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.726);
+  scale: 1.01;
+  transition: 300ms ease-out;
+}
+
+#fade-sides {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
