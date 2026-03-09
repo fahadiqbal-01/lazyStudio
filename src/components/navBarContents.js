@@ -36,7 +36,8 @@ export default function NavBarContents() {
           </Link>
         ))}
       </List>
-      <button
+      <Link
+        href="/contact"
         id="navBarButton"
         className=" px-18 py-7 bg-sec rounded-full text-black overflow-hidden cursor-pointer z-10 drop-shadow-none group relative "
       >
@@ -59,7 +60,7 @@ export default function NavBarContents() {
                         translate-x-[-50%] translate-y-[-50%] rounded-full -z-20 cursor-pointer
                         group-hover:-left-5 group-hover:scale-150 transition-all duration-500 "
         ></div>
-      </button>
+      </Link>
     </Container>
   );
 }

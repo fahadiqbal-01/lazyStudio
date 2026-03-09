@@ -5,6 +5,7 @@
   --font-satoshiRegular: "Satoshi", sans-serif;
   --font-excon: "Excon", sans-serif;
   --font-exconSec: "Excon", sans-serif;
+  --font-exconReg: "Excon", sans-serif;
 
   --color-sec: #585858;
 }
@@ -22,6 +23,12 @@
 }
 
 @font-face {
+  font-family: ExconReg;
+  src: url(../../public/fonts/Excon_Complete/Excon_Complete/Fonts/OTF/Excon-Regular.otf)
+    format("opentype");
+}
+
+@font-face {
   font-family: Excon;
   src: url(../../public/fonts/Excon_Complete/Excon_Complete/Fonts/OTF/Excon-Black.otf)
     format("opentype");
@@ -32,9 +39,6 @@
   src: url(../../public/fonts/Excon_Complete/Excon_Complete/Fonts/OTF/Excon-Medium.otf)
     format("opentype");
 }
-
-
-
 
 body {
   background: #ffffff;
@@ -80,7 +84,18 @@ body {
 }
 
 .image-text {
-  background-image: url(../../public/images/cliptext.jpg);
+    background-image: url(../../public/images/cliptext.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
+}
+
+#clipSec {
+  background-image: url(../../public/images/cliptext2.jpg);
   background-size: cover;
   background-position: center;
   -webkit-background-clip: text;
@@ -118,4 +133,16 @@ body {
     black 90%,
     transparent
   );
+}
+
+#letsTalkService {
+  box-shadow: 10px 10px 30px rgba(255, 255, 255, 0.212);
+  scale: 1;
+  transition: 300ms ease-out;
+}
+
+#letsTalkService:hover {
+  box-shadow: 10px 10px 40px rgba(233, 233, 233, 0.562);
+  scale: 1.01;
+  transition: 300ms ease-out;
 }

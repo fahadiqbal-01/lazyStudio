@@ -1,3 +1,9 @@
+import AllServices from "@/components/allServices";
+
 export default function Services() {
-  return <div>Services</div>;
+  return (
+    <>
+      <AllServices />
+    </>
+  );
 }

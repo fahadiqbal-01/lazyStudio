@@ -11,18 +11,18 @@ const patrick = Patrick_Hand_SC({
 
 export default function Hero() {
   return (
-    <section className=" px-100 ">
+    <section className=" px-100 -mt-10 ">
       <Container className=" grid grid-cols-2 gap-4 ">
         <div>
           <h1
             className={` font-excon text-[60px] text-black mt-40 leading-snug`}
           >
-            <span className=" text-[100px] image-text ">We craft</span>
+            <span className=" text-[120px] image-text ">We craft</span>
             <br /> websites, brands & digital products
           </h1>
         </div>
         <div>
-          <p className=" font-satoshiRegular text-[22px] text-black w-120 mt-52 ml-auto ">
+          <p className=" font-satoshiRegular text-[22px] text-black w-120 mt-60 ml-auto ">
             <b>Lazy Studio</b> is a global digital agency specializing in
             websites, e-commerce and brand experiences. We help startups and
             growing businesses build powerful digital products.
@@ -30,6 +30,7 @@ export default function Hero() {
 
           <div className=" grid grid-cols-2 gap-4 ">
             <LetsTalkButton
+              id="letsTalkBtn"
               text="let's talk"
               textSec="Book NOw"
               className=" ml-17 "
